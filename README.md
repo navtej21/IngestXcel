@@ -29,7 +29,7 @@ Conventional data ingestion typically means one hand-coded pipeline per source. 
 ## Architecture
 
 ```
-Multiple Source Systems (SQL Server, Azure SQL, Excel, CSV, ...)
+Multiple Source Systems (SQL Server, Azure SQL,Oracle,FabricSQLDB, Excel, CSV, ...)
                     |
                     v
           PL_Master_Orchestrator
