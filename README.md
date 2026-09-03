@@ -4,6 +4,8 @@
 
 IngestXcel ingests data from multiple heterogeneous source systems into a governed Bronze/Silver medallion architecture — without writing new pipeline code for every source. Onboarding a new source is a metadata registration exercise (rows in a SQL database), not a development task. A single, generic set of pipelines and notebooks reads that metadata at runtime to determine how to connect, extract, transform, and load each entity.
 
+> **A note on process, for transparency.** This project was designed, developed, and tested through an extensive collaborative process using Claude (Anthropic) as an AI development partner — for architecture discussion, code generation, and debugging guidance throughout. Every design decision, every test, and every verification of actual results (row counts, pipeline outputs, query results) was carried out and confirmed directly by the project owner against the real, live Fabric environment — Claude did not have direct access to the Fabric workspace itself. This included finding and fixing real bugs together (some introduced by Claude's own suggestions, caught through the project's own "verify before trusting" testing discipline), and several genuine architectural corrections made along the way as real Fabric behavior was discovered to differ from initial assumptions.
+
 ---
 
 ## Table of Contents
